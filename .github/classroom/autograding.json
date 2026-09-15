@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "Constructors",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [constructors]",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Push Elements",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [push]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Element Access",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [access]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Pop Elements",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [pop]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Insert at Position",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [insert]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Remove by Value",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [remove]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Count Occurrences",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [count]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Reverse the List",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [reverse]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Copy (Rule of Three)",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [copy]",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Print List to Stream",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [ostream]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Const Correctness",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [const]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Performance",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_dll_test [performance]",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}
